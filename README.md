@@ -2,8 +2,12 @@
 
 ![Project Logo](static/logo.png)
 
-This project is developed as part of the AI-Challenge by Arkangel AI. It aims to develop a computer vision model for recognizing workers of a company while detecting their emotions.
+This project, developed as part of the AI-Challenge by Arkangel AI, focuses on building a computer vision model for two key tasks:
 
+1. **Emotion Detection Model:** Our Emotion Detection model is based on MobileNet V2, which is pre-trained on ImageNet and fine-tuned on a diverse dataset of [Natural Human Face Images for Emotion Recognition](https://www.kaggle.com/datasets/sudarshanvaidya/random-images-for-face-emotion-recognition) from Kaggle.
+
+2. **Worker Identification:** For worker data collection, we sourced images from [Kaggle's Facial Emotion Recognition Dataset](https://www.kaggle.com/datasets/tapakah68/facial-emotion-recognition), which includes images from 19 different individuals. To achieve worker identification, we utilized face feature embeddings obtained through a ResNet model pre-trained on VGGFace. During inference, the model identifies workers by finding the closest match in the database.
+   
 
 ## Table of Contents
 - [Features](#features)
