@@ -2,7 +2,7 @@
 
 ![Project Logo](static/logo.png)
 
-This project, developed as part of the AI-Challenge by Arkangel AI, focuses on building a computer vision model for two key tasks:
+This project focuses on building a computer vision model for two key tasks:
 
 1. **Emotion Detection Model:** Our Emotion Detection model is based on MobileNet V2, which is pre-trained on ImageNet and fine-tuned on a diverse dataset of [Natural Human Face Images for Emotion Recognition](https://www.kaggle.com/datasets/sudarshanvaidya/random-images-for-face-emotion-recognition) from Kaggle. The classes that we considered for our problem were: angry, happy, neutral, and sad.
 
