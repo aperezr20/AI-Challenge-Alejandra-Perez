@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Hero Banner -->
+        <div class="header text-center">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Company Logo" width="350" height="100" class="img-fluid">
+            <h3>We're happy to see you again</h3>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <form action="/predict" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="image">Upload an image of yourself:</label>
+                        <input type="file" class="form-control-file" name="image" id="image" accept="image/*" capture="camera">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <!-- Display the uploaded image and person_name -->
+                {% if emotion and person_name %}
+                {% if person_name == "Unknown" %}
+                <h2 class="text-center">Oops, it seems that we don't know you</h2>
+                {% else %}
+                <h2 class="text-center">¡Hi, {{ person_name }}!</h2>
+                {% endif %}
+                <h4 class="text-center">Predicted Emotion: {{ emotion }}</h4>
+                <div class="text-center">
+                    <img src="{{ url_for('static', filename='uploaded_image.jpg') }}" alt="Uploaded Image" class="img-fluid">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
