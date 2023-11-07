@@ -2,7 +2,7 @@
 
 ![Project Logo](static/logo.png)
 
-This project is developed as part of the AI-Challenge by Arkangel AI. It aims to develop a computer vision model for recognizing workers of a company while detecting their emotions. The model is deployed in the cloud, enabling inferences from any physical point where the system is deployed.
+This project is developed as part of the AI-Challenge by Arkangel AI. It aims to develop a computer vision model for recognizing workers of a company while detecting their emotions.
 
 ## Table of Contents
 - [Features](#features)
