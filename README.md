@@ -4,6 +4,7 @@
 
 This project is developed as part of the AI-Challenge by Arkangel AI. It aims to develop a computer vision model for recognizing workers of a company while detecting their emotions.
 
+
 ## Table of Contents
 - [Features](#features)
 - [Getting Started](#getting-started)
