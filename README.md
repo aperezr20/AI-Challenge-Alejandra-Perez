@@ -28,8 +28,21 @@ Follow these instructions to set up and run the project on your local machine.
 - Pillow
 - requests
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YourUsername/YourRepository.git
-   cd YourRepository
+### Installation 
+1. Install the required Python packages:
+```
+pip install -r requirements.txt
+
+```
+2. Run the Flask app:
+```
+python app.py
+
+```
+### Usage
+- Visit the web interface to upload an image. You may try with an image of yourself or with the ones in /images folder.
+- The system will recognize the identity of the worker and predict their emotion based on the uploaded image.
+
+
+
+  
